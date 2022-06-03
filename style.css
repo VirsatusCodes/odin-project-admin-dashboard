@@ -162,6 +162,7 @@ h2{
 .card{
     background-color: wheat;
     border-radius: 10px;
+    border-left: 5px solid green;
 }
 
 .cards{
@@ -237,4 +238,8 @@ h4{
 
 .person div{
     margin-left: 15px;
+}
+
+.announcement-one, .announcement-two{
+    border-bottom: 1px solid rgba(0,0,0,0.2);
 }
