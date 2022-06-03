@@ -1,9 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
 
-*{
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family:'Yanone Kaffeesatz', sans-serif ;
     background-color: lightblue;
 }
 
-p {
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+.grid {
+    display: grid;
+}
+
+.flex{
+    display: flex;
+}
+
+.container{
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 6fr;
+}
+
+.header{
+    grid-column: 2;
+    grid-row: 1;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: grey;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+img{
+   /*  height: 50px;
+    width: 50px; */
+    border-radius: 100%;
+}
+
+.h-bot-left img{
+    height: 75px;
+    width: 75px;
+}
+
+.h-top-right img, .person img{
+    height: 50px;
+    width: 50px;
+}
+
+.sidebar{
+    grid-column: 1;
+    grid-row: 1/3;
+}
+
+.main-content{
+    grid-column: 2;
+    grid-row: 2;
+    grid-template-columns: 4fr 1fr;
 }
